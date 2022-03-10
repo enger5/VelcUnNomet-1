@@ -34,6 +34,10 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 		
 	public void OnDrag(PointerEventData notikums){
 		Debug.Log ("Notiek vilkšana!");
+		//Nometot objektu atcerās to kā pēdējo vilkto
+		objektuSkripts.pedejaisVIlktais = notikums.pointerDrag;
+
+
 		//Maina objekta x, y koordinātas
 		velkObjRectTransf.anchoredPosition += notikums.delta / objektuSkripts.kanva.scaleFactor;
 	}
@@ -41,7 +45,6 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Beigta objekta vilkšana!");
 		kanvasGrupa.alpha = 1f;
-
 		//Ja objekts nebija nolikts ītajā vietā
 		if (objektuSkripts.vaiIstajaVieta == false) {
 			//Tad to atkal var vilkt
