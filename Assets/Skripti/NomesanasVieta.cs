@@ -60,6 +60,12 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					case "b2tag":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
 						break;
+					case "Cementatag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [5]);
+						break;
+					case "e46":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
+						break;
 
 
 					default:
@@ -93,6 +99,14 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				case "b2tag":
 					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition 
 					= objektuSkripts.b2Koord;
+					break;
+				case "Cementatag":
+					objektuSkripts.cementa.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.cementaKoord;
+					break;
+				case "e46":
+					objektuSkripts.cementa.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.cementaKoord;
 					break;
 
 				default:

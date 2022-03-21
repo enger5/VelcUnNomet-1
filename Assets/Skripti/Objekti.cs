@@ -10,6 +10,8 @@ public class Objekti : MonoBehaviour {
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
 	public GameObject b2;
+	public GameObject cementa;
+	public GameObject e46;
 
 	//Uzglabā velakmo objektu sākotnējās atrašanās vietas koordinātas
 	[HideInInspector]
@@ -20,6 +22,10 @@ public class Objekti : MonoBehaviour {
 	public Vector2 bussKoord;
 	[HideInInspector]
 	public Vector2 b2Koord;
+	[HideInInspector]
+	public Vector2 cementaKoord;
+	[HideInInspector]
+	public Vector2 e46Koord;
 
 	//Uzglabās audio avotu, kurā atskaņot attēlu skaņas efektus
 	public AudioSource skanasAvots;
@@ -37,5 +43,7 @@ public class Objekti : MonoBehaviour {
 		atroKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
 		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
 		b2Koord = b2.GetComponent<RectTransform> ().localPosition;
+		cementaKoord = cementa.GetComponent<RectTransform> ().localPosition;
+		e46Koord = e46.GetComponent<RectTransform> ().localPosition;
 	}
 }
