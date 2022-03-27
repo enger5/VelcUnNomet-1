@@ -63,10 +63,9 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					case "Cementatag":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [5]);
 						break;
-					case "e46":
+					case "e46tag":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
 						break;
-
 
 					default:
 						Debug.Log ("Nedefinēts tags!");
@@ -104,9 +103,29 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					objektuSkripts.cementa.GetComponent<RectTransform> ().localPosition 
 					= objektuSkripts.cementaKoord;
 					break;
-				case "e46":
-					objektuSkripts.cementa.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.cementaKoord;
+				case "e46tag":
+					objektuSkripts.e46.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.e46Koord;
+					break;
+				case "esktag":
+					objektuSkripts.esk.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.eskKoord;
+					break;
+				case "poltag":
+					objektuSkripts.pol.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.polKoord;
+					break;
+				case "trak1tag":
+					objektuSkripts.trak1.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.trak1Koord;
+					break;
+				case "trak5tag":
+					objektuSkripts.trak5.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.trak5Koord;
+					break;
+				case "Ugunstag":
+					objektuSkripts.uguns.GetComponent<RectTransform> ().localPosition 
+					= objektuSkripts.ugunsKoord;
 					break;
 
 				default:
