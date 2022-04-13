@@ -66,6 +66,21 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					case "e46tag":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
 						break;
+					case "esktag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [7]);
+						break;
+					case "poltag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [8]);
+						break;
+					case "trak1tag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [9]);
+						break;
+					case "trak5tag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [10]);
+						break;
+					case "Ugunstag":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [11]); 
+						break;
 
 					default:
 						Debug.Log ("Nedefinēts tags!");
